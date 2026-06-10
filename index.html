@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta http-equiv="refresh" content="0;url=steam://rungameid/3419430">
+  <title>98AZX</title>
+  <style>
+    html, body {
+      background: Canvas;
+      color-scheme: light dark;
+    }
+  </style>
 </head>
+
+<body style="display:none">
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const game = params.get("l");
+
+  if (game) {
+    window.location.replace(`steam://rungameid/${game}`);
+  }
+</script>
+</body>
 </html>
