@@ -17,6 +17,9 @@
 
   if (game) {
     window.location.replace(`steam://rungameid/${game}`);
+    setTimeout(() => {
+      window.location.replace(`https://store.steampowered.com/app/${game}`);
+    }, 2000);
   }
 </script>
 </body>
