@@ -7,10 +7,20 @@
       background: Canvas;
       color-scheme: light dark;
     }
+		body {
+			margin: 0px;
+			padding: 0px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 10vh;
+			color: white;
+		}
   </style>
 </head>
 
-<body style="display:none">
+<body>
+	<p id:"center-txt"><p>
 <script>
   const params = new URLSearchParams(window.location.search);
   const game = params.get("l");
@@ -20,7 +30,10 @@
     setTimeout(() => {
       window.location.replace(`https://store.steampowered.com/app/${game}`);
     }, 2000);
-  }
+	} else {
+		let txt = getElementById("center-txt");
+		txt.append("exit now");
+	}
 </script>
 </body>
 </html>
