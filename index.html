@@ -10,17 +10,19 @@
 		body {
 			margin: 0px;
 			padding: 0px;
+			height: 100vh;
+			width: 100vw;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			font-size: 10vh;
+			font-size: 5vh;
 			color: white;
 		}
   </style>
 </head>
 
 <body>
-	<p id:"center-txt"><p>
+	<p id="center-txt"><p>
 <script>
   const params = new URLSearchParams(window.location.search);
   const game = params.get("l");
@@ -33,6 +35,7 @@
 	} else {
 		let txt = document.getElementById("center-txt");
 		txt.append("exit now");
+		console.log("no games");
 	}
 </script>
 </body>
